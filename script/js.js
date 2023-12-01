@@ -29,7 +29,7 @@ function weatherByCoords(position){
 }
 
 function cityToCoords(city){
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=c4f8078bdf4f4c4bb63cd99e608c9fd2`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=c4f8078bdf4f4c4bb63cd99e608c9fd2`)
     .then(result => result.json())
     .then(data => {x = data[0].lat; y = data[0].lon;})
     .then(function(){showWeather()});
