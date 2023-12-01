@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Inter-R; /* Имя шрифта */
+    src: url(font/Inter-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Inter-L; /* Имя шрифта */
+    src: url(font/Inter-ExtraLight.otf); /* Путь к файлу со шрифтом */
+}
+
+html{
+    background: linear-gradient(150.64deg, #00211b 0%, #2d4e67 100%);
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(150.64deg, #8E2DE2 0%, #4A00E0 100%); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+header h1{
+    font: 300 20px Inter-L;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main p:first-child{
+    font: 700 72px Inter-R;
+    opacity: 1;
+    margin-bottom: 0px;
+}
+
+.main p{
+    font: 400 24px Inter-L;
+    opacity: 0.8;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.auto-button{
+    width: 350px;
+    height: 60px;
+    border: 0px solid #fff;
+    background-color: white;
+    border-radius: 25px;
+    color: rgb(2, 70, 70);
+    font: 600 18px Inter-L;
+    opacity: 0.9;
+}
+
+.auto-button:hover{
+    transition: 0.3s;
+    background-color: rgb(216, 231, 230)
+}
+
+.auto-button:active{
+    width: 360px;
+}
+
+.main a{
+    margin-top: 20px;
+    font: 300 17px Inter-L;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.main input{
+    padding: 10px;
+    width: 340px;
+    height: 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 25px 0px 0px 25px;
+    outline: none;
+    font: 300 18px Inter-L;
+    opacity: 0.7;
+    text-align: center;
+    color: #fff;
+}
+
+.main input::placeholder{
+    text-align: center;
+    color: #fff;
+}
+
+.search-button{
+    cursor: pointer;
+    padding: 12px 25px 12px 20px;
+    border-radius: 0px 25px 25px 0px;
+    border: 0px;
+    background-color: #fff;
+    color: rgb(0, 20, 20);
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.city-find{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer p{
+    font: 300 18px Inter-L;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .auto-button {
+        width: 300px;
+        height: 55px;
+        font-size: 17px;
+    }
+
+    .main a {
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+
+    .main p:first-child {
+        font-size: 64px;
+    }
+
+    .main p {
+        font-size: 22px;
+    }
+
+    .main input {
+        width: 240px;
+        height: 15px;
+        font-size: 17px;
+    }
+
+    .search-button {
+        padding: 10px 25px 9px 20px;
+    }
+    
+    footer p {
+        font-size: 17px;
+    }
+}
