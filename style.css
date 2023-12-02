@@ -85,6 +85,16 @@ header a{
     cursor: pointer;
 }
 
+.main-alternative-button{
+    background: none;
+    margin-top: 20px;
+    font: 300 17px Inter-L;
+    opacity: 0.7;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
 .main input{
     padding: 10px;
     width: 340px;
@@ -127,7 +137,7 @@ footer p{
     opacity: 0.8;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
 
     header h1 {
         font-size: 18px;
@@ -139,7 +149,12 @@ footer p{
         font-size: 17px;
     }
 
-    .main a {
+    .main-alternative-button{
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+
+    .main a{
         font-size: 16px;
         padding: 0px 10px;
     }
@@ -153,13 +168,13 @@ footer p{
     }
 
     .main input {
-        width: 240px;
+        width: 220px;
         height: 15px;
         font-size: 17px;
     }
 
     .search-button {
-        padding: 10px 25px 9px 20px;
+        padding: 10px 20px 9px 15px;
     }
     
     footer p {
