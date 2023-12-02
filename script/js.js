@@ -1,3 +1,11 @@
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 let $body = document.querySelectorAll("body")[0];
 let $a = document.querySelectorAll("a")[0];
 let main = document.getElementById("main");
