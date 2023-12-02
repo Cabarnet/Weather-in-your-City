@@ -7,6 +7,7 @@ window.addEventListener('resize', () => {
 });
 
 let $body = document.querySelectorAll("body")[0];
+let body_content = document.getElementsByClassName("body-content")[0];
 let $a = document.querySelectorAll("a")[0];
 let main = document.getElementById("main");
 let city, x, y;
@@ -64,7 +65,7 @@ function showWeather(){
     if(data.weather[0].main == "Snow") 
     {
       $body.style.background = 'linear-gradient(150.64deg, rgb(255 255 255) 0%, rgb(241 241 241) 100%)';
-      $body.style.color = 'black';
+      body_content.style.color = 'black';
       $a.style.color = 'black';
     };
   }
